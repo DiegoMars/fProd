@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Allerta:700|Allerta:400");
+
+:root {
+  --text: #fcf0e6;
+  --background: #010110;
+  --primary: #FF6500;
+  --secondary: #1E3E62;
+  --accent: #0B192C;  
+}
+
+/* Nav Stuff */
+#MainNav {
+  background-color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 10px;
+}
+.NavLeft {
+  display: flex;
+  align-items: center;
+}
+.NavLeft > a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 10px;
+  border-radius: 20px;
+  transition: 0.3s;
+  height: 100%;
+}
+.NavLeft > a:hover {
+  color: var(--primary);
+  background-color: var(--accent);
+}
+.NavLogo {
+  display: flex;
+  align-items: center;
+}
+.NavLogo > div {
+  padding: 0 3px;
+}
+.Rotate{
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+.words{
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  height: 28.48px;
+}
+.words > h5{
+  display: block;
+  height: 120%;
+  color: var(--accent);
+  animation: spin_words 8s infinite;
+}
+@keyframes spin_words{
+  20%{
+      transform: translateY(-100%);
+  }
+  40%{
+      transform: translateY(-200%);
+  }
+  60%{
+      transform: translateY(-300%);
+  }
+  80%{
+      transform: translateY(-400%);
+  }
+  100%{
+      transform: translateY(-500%);
+  }
+}
+
+/*                        */
+/* Real Time Colors Stuff */
+/*                        */
+body {
+  font-family: "Allerta", "Helvetica", "Times New Roman";
+  font-weight: 400;
+  background-color: var(--background);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Allerta", "Helvetica", "Times New Roman";
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;  /* 16px */
+}
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+  margin: 0;
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+  margin: 0;
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+  margin: 0;
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+  margin: 0;
+}
