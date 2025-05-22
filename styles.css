@@ -1,14 +1,26 @@
 @import url("https://fonts.googleapis.com/css?family=Allerta:700|Allerta:400");
 
 :root {
+   /* Some color variables */
   --text: #fcf0e6;
   --background: #010110;
   --primary: #FF6500;
   --secondary: #1E3E62;
   --accent: #0B192C;  
+
+  /* Some size variables */
+  /* These don't work for media queries for some reason*/
+  --xs: 0;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1400px;
 }
 
+/*           */
 /* Nav Stuff */
+/*           */
 #MainNav {
   background-color: var(--secondary);
   display: flex;
@@ -16,6 +28,7 @@
   justify-content: space-between;
   padding: 7px 10px;
 }
+/* Left nav stuff */
 .NavLeft {
   display: flex;
   align-items: center;
@@ -40,7 +53,7 @@
   padding: 0 3px;
 }
 .Rotate{
-  display: flex;
+  display: none;
   align-items: center;
   padding-top: 5px;
 }
@@ -53,7 +66,7 @@
 .words > h5{
   display: block;
   height: 120%;
-  color: var(--accent);
+  color: var(--primary);
   animation: spin_words 8s infinite;
 }
 @keyframes spin_words{
@@ -71,6 +84,26 @@
   }
   100%{
       transform: translateY(-500%);
+  }
+}
+/* Right nav stuff */
+.NavRight{
+  display: flex;
+  align-items: center;
+}
+.socials img {
+  width: 23px;
+  height: 23px;
+}
+
+/*               */
+/* Media Queries */
+/*               */
+@media screen and (min-width: 768px){ /* At md breakpoint, apply styles */
+  /* Basically, only show the rotating thing from md
+     break point and on*/
+  .Rotate{
+    display: flex;
   }
 }
 
