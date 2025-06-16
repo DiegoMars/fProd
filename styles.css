@@ -6,7 +6,7 @@
   --background: #010110;
   --primary: #FF6500;
   --secondary: #1E3E62;
-  --accent: #0B192C;  
+  --accent: #0B192C;
 
   /* Some size variables */
   /* These don't work for media queries for some reason*/
@@ -29,11 +29,11 @@
   padding: 7px 10px;
 }
 /* Left nav stuff */
-.NavLeft {
+.navLeft {
   display: flex;
   align-items: center;
 }
-.NavLeft > a {
+.navLeft > a {
   text-decoration: none;
   color: var(--text);
   padding: 10px;
@@ -41,18 +41,18 @@
   transition: 0.3s;
   height: 100%;
 }
-.NavLeft > a:hover {
+.navLeft > a:hover {
   color: var(--primary);
   background-color: var(--accent);
 }
-.NavLogo {
+.navLogo {
   display: flex;
   align-items: center;
 }
-.NavLogo > div {
+.navLogo > div {
   padding: 0 3px;
 }
-.Rotate{
+.rotate{
   display: none;
   align-items: center;
   padding-top: 5px;
@@ -87,7 +87,7 @@
   }
 }
 /* Right nav stuff */
-.NavRight{
+.navRight{
   display: flex;
   align-items: center;
 }
@@ -95,14 +95,34 @@
   width: 23px;
   height: 23px;
 }
+/* Pages */
+#Pages {
+  color: var(--text);
+  font-weight: bold;
+  background-color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#Pages > p {
+  padding: 1rem 0 1rem 1rem;
+  margin: 0;
+}
+
+/*                     */
+/* Farisa Header Stuff */
+/*                     */
+#Farisa {
+  height: 300px;
+  background-color: #FFF000;
+}
 
 /*               */
 /* Media Queries */
 /*               */
 @media screen and (min-width: 768px){ /* At md breakpoint, apply styles */
-  /* Basically, only show the rotating thing from md
-     break point and on*/
-  .Rotate{
+  /* Basically, only show the rotating thing from md break point and on*/
+  .rotate{
     display: flex;
   }
 }
