@@ -157,10 +157,14 @@
 }
 .socials img {
   height: 23px;
+  display: flex;
+  align-items: center;
 }
 .jplLogo{
   display: flex;
   align-items: center;
+  color: var(--text);
+  text-decoration: none;
 }
 /* Pages */
 #Pages {
@@ -194,6 +198,13 @@ footer {
 }
 footer > p {
   margin: 0;
+}
+.name {
+  display: flex;
+  align-items: center;
+}
+.name img {
+  padding: 0.25rem 0 0 0.5rem;
 }
 .copyright {
   color: var(--text-500);
