@@ -78,6 +78,10 @@
   --xxl: 1400px;
 }
 
+html {
+  scroll-behavior: smooth; /* Makes the scrolling during ID links smooth */
+}
+
 /*           */
 /* Nav Stuff */
 /*           */
@@ -155,6 +159,7 @@
   padding: 0.5rem;
   border-radius: 1rem;
   color: var(--accent);
+  text-decoration: none;
 }
 .button:hover {
   background-color: var(--primary-400);
@@ -177,7 +182,7 @@
 /* Farisa Header Stuff */
 /*                     */
 #Farisa {
-  height: 300px;
+  height: 3000px;
   background-color: #FFF000;
 }
 
@@ -245,6 +250,15 @@ footer {
   margin: 0;
   color: var(--text-500);
   text-align: center;
+}
+@keyframes flash {
+  0% { background-color: transparent; }
+  30% { background-color: #ffffff1a; }
+  60% { background-color: #ffffff33; }
+  100% { background-color: transparent; }
+}
+.flash {
+  animation: flash 0.8s ease-in-out;
 }
 
 /*               */
