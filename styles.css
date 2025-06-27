@@ -257,6 +257,24 @@ footer {
   #Pages > p {
     padding: 1rem 0 1rem 1rem;
   }
+  #footerEverything {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+  }
+  #footerName {
+    flex: 1 1 250px;
+  }
+  #footerIcons {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+  }
+  #footerSocials,
+  #footersProf {
+    flex: 1 1 auto;
+  }
 }
 @media screen and (min-width: 780px){ /* At md breakpoint, apply styles */
   /* Basically, only show the rotating thing from md break point and on*/
@@ -265,6 +283,12 @@ footer {
   }
   .navRight {
     display: flex;
+  }
+  #footerEverything {
+    gap: 2rem;
+  }
+  #footerIcons {
+    gap: 2rem;
   }
 }
 @media screen and (min-width: 1200px){ /* At xl breakpoint, apply styles */
@@ -281,10 +305,19 @@ footer {
     justify-content: space-evenly;
   }
   #footerIcons {
+    flex-direction: row;
     padding-top: 0;
   }
   #footerSocials {
     padding-top: 0;
+    margin: auto 0;
+  }
+  #footersProf {
+    padding: 0;
+  }
+  #footerSocials,
+  #footersProf {
+    flex: 1 1 250px;
   }
 }
 
